@@ -5,7 +5,7 @@ const axios = require("axios").default;
 let apiResponse;
 
 exports.handler = async (event) => {
-    
+
     const apiResponse = await axios.get("https://www.reddit.com/r/UpliftingNews/.json");
     const newsItems = await apiResp.data.data.children;
     
@@ -14,5 +14,5 @@ exports.handler = async (event) => {
         body: JSON.stringify(data),
     };
 
-    return apiResp;
+    return response;
 };
