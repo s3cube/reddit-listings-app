@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/s3cube/reddit-listings-lambda/issues"
   },
-  "homepage": "https://github.com/s3cube/reddit-listings-lambda#readme"
+  "homepage": "https://github.com/s3cube/reddit-listings-lambda#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
 }
