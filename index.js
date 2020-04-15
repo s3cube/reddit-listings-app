@@ -20,5 +20,5 @@ exports.handler = async (event) => {
 
     console.log(apiResponse)
 
-    return response;
+    return apiResponse;
 };
