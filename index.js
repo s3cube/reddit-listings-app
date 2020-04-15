@@ -5,20 +5,14 @@ const axios = require("axios").default;
 let apiResponse;
 
 exports.handler = async (event) => {
-    // TODO implement
+    
+    const apiResponse = await axios.get("https://www.reddit.com/r/UpliftingNews/.json");
+    const newsItems = await apiResp.data.data.children;
+    
     const response = {
         statusCode: 200,
-        body: JSON.stringify('Hello from Lambda!!'),
+        body: JSON.stringify(data),
     };
 
-    axios.get("https://www.reddit.com/r/UpliftingNews/.json")
-    .then((response, error)=>{
-        console.log(response);
-        console.log(error);
-        apiResponse = response;
-    });
-
-    console.log(apiResponse)
-
-    return apiResponse;
+    return apiResp;
 };
