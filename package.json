@@ -19,6 +19,6 @@
   "homepage": "https://github.com/s3cube/reddit-listings-lambda#readme",
   "dependencies": {
     "axios": "^0.19.2",
-    "qs": "^6.9.3"
+    "qs": "^6.9.7"
   }
 }
